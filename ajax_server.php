@@ -21,9 +21,10 @@
         if($searchString == strtolower(substr($god, 0, $len))){
             $hint .= $god.",";
         }
-        if($hint != ''){
-            break;
-        }
+        // euta matrw selection lyaunw ko lagi ho
+        // if($hint != ''){
+        //     break;
+        // }
     }
     echo $hint;
 ?>
