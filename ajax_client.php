@@ -10,7 +10,7 @@
         <input type="text" name="god" id="god" oninput="get_data_using_ajax()">
         <div id="god_results"></div>
     <script>
-        get_data_using_ajax();
+        // get_data_using_ajax();
         function get_data_using_ajax(search_string){
             var search_string = document.getElementById('god').value
             var xmlhttp = new XMLHttpRequest();
@@ -21,7 +21,7 @@
                     // alert('search access');
                 }
             };
-            xmlhttp.open("GET", "ajax_server.php?Search=" + search_string, true);
+            xmlhttp.open("GET", "ajax_server.php?search=" + search_string, true);
             xmlhttp.send();
         }
     </script>
